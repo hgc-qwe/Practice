@@ -32,6 +32,15 @@ void func4(char* a,char* b,int base,char* res){
         carry=sum/base;
         res[i]=func3(sum%base);
     }
+
+    if(carry>0){
+        memmove(res+1,res,len);
+        res[0]=func3(carry);
+        res[len+1]='\0';
+    }
+    else{
+        res[len]='\0';
+    }
 }
 
 void func5(char* s){
