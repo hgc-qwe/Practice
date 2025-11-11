@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main(){
+int main(){  //容斥原理
     long long n;
     while(scanf("%lld",&n)!=EOF){
         long long A1=n/2+n/5+n/11+n/13;
