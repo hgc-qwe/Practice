@@ -5,6 +5,7 @@ void func1(int* a,int* b){
     *b=t;
 }
 
+//调整堆函数
 void func2(int* nums,int n,int i){
     int largest=i;
     int left=i*2+1;
@@ -22,6 +23,7 @@ void func2(int* nums,int n,int i){
     }
 }
 
+//构建最大堆
 void func3(int* nums,int n){
     for(int i=n/2-1;i>=0;i--){
         func2(nums,n,i);
